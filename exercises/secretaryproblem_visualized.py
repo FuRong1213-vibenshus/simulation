@@ -3,6 +3,7 @@ import math
 
 def secretary_problem(n, trials=10000):
     success = 0
+    
     for _ in range(trials):
         candidates = list(range(1, n+1))
         random.shuffle(candidates)
